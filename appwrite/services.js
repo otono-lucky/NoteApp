@@ -16,7 +16,7 @@ export const register = async (email, password, name) => {
 
 // Log in an existing user
 export const login = async (email, password) => {
-  return await account.createEmailSession(email, password);
+  return await account.createSession(email, password);
 };
 
 // Log out current session
